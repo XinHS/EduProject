@@ -118,6 +118,14 @@
             <artifactId>standard</artifactId>
             <version>${taglibs.version}</version>
         </dependency>
+        <!--mybatis-spring整合包依赖-->
+        <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>${mybatis-spring.version}</version>
+        </dependency>
+
         <!-- log start -->
         <dependency>
             <groupId>log4j</groupId>

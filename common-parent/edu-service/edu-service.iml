@@ -18,6 +18,7 @@
     <orderEntry type="module" module-name="edu-dao" />
     <orderEntry type="library" name="Maven: org.mybatis:mybatis:3.4.1" level="project" />
     <orderEntry type="module" module-name="edu-model" />
+    <orderEntry type="module" module-name="common-parent" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.3.14.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:4.3.14.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.2" level="project" />

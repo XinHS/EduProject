@@ -34,6 +34,12 @@
     <groupId>com.xin.edu</groupId>
     <version>1.0-SNAPSHOT</version>
   </dependency>
+  <dependency>
+    <groupId>com.xin.edu</groupId>
+    <artifactId>common-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <scope>compile</scope>
+  </dependency>
   <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
 </dependencies>
 
@@ -79,6 +85,32 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+<!--加载xml配置文件-->
+        <plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.0.2</version>
+          <executions>
+            <execution>
+              <id>copy-xmls</id>
+              <phase>process-sources</phase>
+              <goals>
+                <goal>copy-resources</goal>
+              </goals>
+              <configuration>
+                <outputDirectory>${basedir}/target/classes</outputDirectory>
+                <resources>
+                  <resource>
+                    <directory>${basedir}/src/main/java</directory>
+                    <includes>
+                      <include>**/*.xml</include>
+                    </includes>
+                  </resource>
+                </resources>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+
       </plugins>
     </pluginManagement>
   </build>
