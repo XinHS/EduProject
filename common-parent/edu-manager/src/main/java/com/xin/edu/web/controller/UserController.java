@@ -20,4 +20,19 @@ public class UserController {
         System.out.println(user);
         return null;
     }
+    @RequestMapping("login")
+    public String login(){
+
+        return "Default";
+    }
+    @RequestMapping("main")
+    public String main(){
+
+        return "User/UserManage";
+    }
+    @RequestMapping("userInfo")
+    public String userInfo(){
+
+        return "User/UserInfo";
+    }
 }

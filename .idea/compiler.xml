@@ -19,6 +19,7 @@
       <module name="edu-dao" target="1.7" />
       <module name="edu-manager" target="1.7" />
       <module name="edu-model" target="1.7" />
+      <module name="edu-model (1)" target="1.7" />
       <module name="edu-service" target="1.7" />
       <module name="edudao" target="1.5" />
     </bytecodeTargetLevel>
